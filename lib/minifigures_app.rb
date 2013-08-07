@@ -1,5 +1,6 @@
 require 'webmachine'
 require 'webmachine/adapters/rack'
+require 'json'
 
 class DataStore 
   def self.minifigures=(data)
@@ -11,13 +12,13 @@ class DataStore
   end
 end
 
-
 class Series < Webmachine::Resource
   def content_types_provided
     [['application/json', :to_json]]
   end
 
   def to_json
+    DataStore.minifigures= [{"name" => "Robot Lady"}]
     DataStore.minifigures.to_json
   end
 end
