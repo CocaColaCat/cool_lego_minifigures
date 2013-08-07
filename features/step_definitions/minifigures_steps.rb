@@ -1,5 +1,5 @@
-Given(/^the system knows about the series 11$/) do |minifigures|
-  DataStore.minifigures = minifigures.hashes
+Given(/^the system knows about the series 11$/) do |minifigure|
+  series_gateway.add_minifigure minifigure.hashes
 end
 
 When(/^the client request GET (.*)$/) do |path|

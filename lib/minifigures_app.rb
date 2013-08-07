@@ -1,16 +1,8 @@
 require 'webmachine'
 require 'webmachine/adapters/rack'
 require 'json'
-
-class DataStore 
-  def self.minifigures=(data)
-    @@minifigures = data
-  end
-  
-  def self.minifigures
-    @@minifigures
-  end
-end
+require_relative 'mongodb_connector'
+require_relative 'series_gateway'
 
 class Series < Webmachine::Resource
   def content_types_provided
@@ -18,8 +10,7 @@ class Series < Webmachine::Resource
   end
 
   def to_json
-    DataStore.minifigures= [{"name" => "Robot Lady"}]
-    DataStore.minifigures.to_json
+    SeriesGateway.new('test', 'test').get_minifigures.to_json
   end
 end
 
