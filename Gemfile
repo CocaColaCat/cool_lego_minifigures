@@ -5,6 +5,7 @@ gem 'json', '1.7.3'
 gem 'mongo', '1.8.5'
 gem 'bson_ext', '1.8.5'
 gem 'service_manager', '0.6.4'
+gem 'simplecov', '0.7.1'
 
 group :test do
   gem 'cucumber', '1.2.1'

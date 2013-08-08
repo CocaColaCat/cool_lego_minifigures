@@ -34,6 +34,10 @@ GEM
     service_manager (0.6.4)
       background_process (>= 1.2)
       tcpsocket-wait
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     tcpsocket-wait (1.0.0)
     webmachine (1.1.0)
       i18n (>= 0.4.0)
@@ -51,4 +55,5 @@ DEPENDENCIES
   rack-test (= 0.6.1)
   rspec (= 2.11.0)
   service_manager (= 0.6.4)
+  simplecov (= 0.7.1)
   webmachine (= 1.1.0)

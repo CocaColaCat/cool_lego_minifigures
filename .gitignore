@@ -1,1 +1,4 @@
-mogod.pid
+mongod.pid
+coverage/*
+.DS_Store
+
