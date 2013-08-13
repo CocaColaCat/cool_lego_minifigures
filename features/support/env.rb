@@ -1,8 +1,10 @@
 require File.join(File.expand_path('../../../', __FILE__), 'lib', 'minifigures_app')
 require 'rack/test'
 require 'simplecov'
+require 'capybara/cucumber'
 SimpleCov.start
 
+Capybara.app = MinifiguresApp.adapter
 module AppHelper
   def app
     MinifiguresApp.adapter

@@ -5,15 +5,12 @@ Feature: add new minifigure
     Given the system knows the following: 
       | name |
       | Lady Robot |
-    When add the following minifigure: 
+    When client adds the following minifigure: 
       | name | 
       | Scientist |
-    Then the system should list the following: 
-      """
-      [
-        {"name" : "Lady Robot"}, 
-	{"name" : "Scientist"}
-      ]
-      """
+    Then the system should contain the following:
+      | name |
+      | Lady Robot |
+      | Scientist |
 
 

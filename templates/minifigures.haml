@@ -1,0 +1,6 @@
+%form{name: 'add_minifigure', action: '/series/11', method: 'POST'}
+  %input{type: 'text', name: 'minifigure_name'}
+  %input{type: 'submit', value: 'add minifigure'}
+- minifigures.each do |m|
+  %h3= m[:name]
+
