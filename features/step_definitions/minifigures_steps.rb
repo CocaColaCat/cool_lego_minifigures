@@ -1,5 +1,7 @@
 Given(/^the system knows about the series 11$/) do |minifigure|
-  series_gateway.add_minifigure minifigure.hashes
+  minifigure.hashes.each do |m|
+    Minifigure.create(m)
+  end
 end
 
 When(/^the client request GET (.*)$/) do |path|

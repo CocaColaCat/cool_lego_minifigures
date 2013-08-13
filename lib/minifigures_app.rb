@@ -1,17 +1,24 @@
 require 'webmachine'
 require 'webmachine/adapters/rack'
 require 'json'
-require_relative 'mongodb_connector'
-require_relative 'series_gateway'
+require 'mongoid'
+require 'mongo'
 
-class Series < Webmachine::Resource
+class SeriesResource < Webmachine::Resource
   def content_types_provided
     [['application/json', :to_json]]
   end
 
   def to_json
-    SeriesGateway.new('test', 'test').get_minifigures.to_json
+    json = []
+    Minifigure.all.each {|m| json << {name: m.name}}
+    json.to_json
   end
+end
+
+class Minifigure
+  include Mongoid::Document
+  field :name, type: String
 end
 
 MinifiguresApp = Webmachine::Application.new do |app|
@@ -20,7 +27,7 @@ MinifiguresApp = Webmachine::Application.new do |app|
 		 end
 
 		 app.routes do 
-		   add ['series', :series_number], Series
+		   add ['series', :series_number], SeriesResource
 		 end
 end
-
+Mongoid.load!("./config/mongoid.yml", :development)
