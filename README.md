@@ -21,8 +21,7 @@ Eventually, I come with this technology stack:
 
 __Outcome__  
 It is easy to start collecting and you will be in fully joy of getting new minifigures at the beginning. But it is hard to   
-get certain characters as they are rare. However, frustration of collecting, I have a great time of learning Cucumber and building  
-my "Cool Lego Minifigures" app.   
+get certain characters as they are rare. However, frustration of collecting, I have a great time of learning Cucumber and building  my "Cool Lego Minifigures" app.   
 Gherkin really helps to describe features, which is so importance for software development, ubiquitous language and crystal clear requirements.   
 Using hooks to start MongoDB server, clean database, conduct code coverage are handy.   
 Most important, once I have my feature defined, I can focus on development as I know I am doing the right thing. After that, I can conduct refactoring without fear.    
