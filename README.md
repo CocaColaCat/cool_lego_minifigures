@@ -19,7 +19,7 @@ Eventually, I come with this technology stack:
 *  MongoDB  
 *  Mongoid  
 
-__Outcome__
+__Outcome__  
 It is easy to start collecting and you will be in fully joy of getting new minifigures at the beginning. But it is hard to   
 get certain characters as they are rare. However, frustration of collecting, I have a great time of learning Cucumber and building  
 my "Cool Lego Minifigures" app.   
