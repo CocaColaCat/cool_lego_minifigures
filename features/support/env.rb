@@ -4,6 +4,8 @@ require 'simplecov'
 require 'capybara/cucumber'
 SimpleCov.start
 
+Mongoid.load!("./config/mongoid.yml", :development)
+
 Capybara.app = MinifiguresApp.adapter
 module AppHelper
   def app
