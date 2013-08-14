@@ -7,7 +7,7 @@ __How am I going to collect all minifigures?__
 At the early stage of this project, I build a feature to list the minifigures I have collected, so that I will not buy a duplicate.  
 And also it allows me to add new minifigures and then shows the update to date list. 
 
---What does it mean by learning Cucumber in this context?--  
+__What does it mean by learning Cucumber in this context?__  
 In [Cucumber Book](http://pragprog.com/book/hwcuc/the-cucumber-book), Matt Wynne and Aslak Hellesoy do a great job in explaining these:  
 *  Test Rack-based REST APIs in Sinatra  
 *  Test Database in sqlite3 and ActiveRecord  
@@ -19,7 +19,7 @@ Eventually, I come with this technology stack:
 *  MongoDB  
 *  Mongoid  
 
---Outcome--  
+__Outcome__
 It is easy to start collecting and you will be in fully joy of getting new minifigures at the beginning. But it is hard to   
 get certain characters as they are rare. However, frustration of collecting, I have a great time of learning Cucumber and building  
 my "Cool Lego Minifigures" app.   
